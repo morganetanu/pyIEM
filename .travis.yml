@@ -47,7 +47,7 @@ install:
   
   # Install pyIEM
   # ---------------
-  - pip install --no-deps .
+  - pip install -r requirements.txt
 
 before_script:
   - psql -c 'create database postgis;' -U postgres
