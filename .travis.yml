@@ -68,9 +68,7 @@ before_script:
   - psql -U postgres -f data/schema/mos.sql mos
 
 script:
-  - if [[ "$PYTHON_VERSION" == 2* ]]; then
-      coverage run --source=pyiem setup.py test;
-    fi
+  - coverage run --source=pyiem setup.py test;
 
 after_success:
   - if [[ "$PYTHON_VERSION" == 2* ]]; then
