@@ -48,6 +48,11 @@ install:
   # Install pyIEM
   # ---------------
   - pip install -r requirements.txt
+  - if [[ "$PYTHON_VERSION" == 2* ]]; then
+      pip install gdata;
+    else  
+      pip install git+https://github.com/dvska/gdata-python3.git;
+    fi
 
 before_script:
   - psql -c 'create database postgis;' -U postgres
