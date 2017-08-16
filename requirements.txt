@@ -20,4 +20,4 @@ git+https://github.com/akrherz/python-metar.git@snowdepth
 git+https://github.com/akrherz/windrose.git@darylchanges
 # https://github.com/google/gdata-python-client/issues/29
 # git+https://github.com/google/gdata-python-client
-git+https://github.com/dvska/gdata-python3#egg=gdata
+git+https://github.com/dvska/gdata-python3.git
