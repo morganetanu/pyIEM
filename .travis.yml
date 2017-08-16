@@ -1,10 +1,7 @@
 sudo: required
+
 dist: trusty
-cache:
-  timeout: 1000
-  directories:
-    - $HOME/.cache/pip
-    - $HOME/miniconda
+
 addons:
   postgresql: "9.5"
   apt:
@@ -17,11 +14,11 @@ env:
     - PYTHON_VERSION=2.7
     - PYTHON_VERSION=3.6
 language: python
-python:
-  - "2.7"
+
 before_install:
   - sudo add-apt-repository ppa:ubuntugis/ppa -y
   - sudo apt-get update -qq
+
 install:
   # Install miniconda
   # -----------------
